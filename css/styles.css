@@ -1,0 +1,153 @@
+/*Reference:
+Header Photo - Seperoper Poster http://bit.ly/2qPCAzH */
+
+html,
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+    position: absolute;
+    left: 5px;
+    z-index: 3;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+}
+
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #e19295;
+    color: white;
+}
+
+#logo {
+    float: right;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+  background: #8cb30c;
+}
+
+
+
+.side-nav {
+    background: #e19295;
+    line-height: 35px;
+    text-align: left;
+    width: 340px;
+    padding-bottom: 60px;
+}
+
+.header {
+    padding: 20px 10px 30px 10px;
+    border-bottom: 5px solid #8cb30c;
+    background: url(../images/bg.jpg) top center;
+    border-top: 5px solid #8cb30c;
+    height: 150px;
+}
+
+.search {
+    width: 100%;
+    padding: 5px 0;
+    background: white;
+}
+
+input {
+    font-size: 12px;
+    padding: 10px;
+    border: 0;
+    width: 93%;
+}
+
+input[type="search"] {
+    width: 70%;
+}
+
+
+.content {
+    height: 100%;
+}
+
+h1 {
+  color: #fff;
+  margin: 100px 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.3em;
+  text-shadow: #383737 1px 0 10px;
+}
+
+ol.locations {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin-top: 20px;
+    margin-left: 3em;
+    padding: 0;
+
+    counter-reset: li-counter;
+}
+ol.locations > li{
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 3em;
+    border-left: 2px solid #fff;
+    padding-right: 20px;
+    line-height: 20px;
+}
+ol.locations > li:before {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;
+
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+ol.locations > li a:hover{
+    background: #8cb30c;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    top: 14px;
+    padding: 18px;
+}
+
+
+#map {
+  bottom:0px;
+  height: 100%;
+  left: 344px;
+  position: absolute;
+  right: 0px;
+  transition: all .3s ease-in-out;
+}
+
+#map.active {
+    left: 0;
+}
+
+.venueimg {
+    float: right;
+    padding-left: 20px;
+}
